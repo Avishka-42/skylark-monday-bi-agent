@@ -159,7 +159,7 @@ Rules:
    and what metric or aspect they want.
 9. For revenue/pipeline questions, use the Deal Value field when available and state the field used.
 10. For operational questions, use Work Orders fields such as execution status, billing/collection status and amount receivable when available.
-11. When useful, provide actionable business insights.
+11. When useful, provide actionable business insights..
 """
     response = client.chat.completions.create(
         model="monday-fast",
