@@ -151,10 +151,15 @@ Rules:
 5. Mention important data-quality caveats before making conclusions affected by them.
 6. Give concise, business-friendly answers with headings/bullets when useful.
 7. Use exact numbers and percentages when supported by the data.
-8. If a question is ambiguous and cannot be answered reliably, ask a clarification question.
+8. If a question is broad or ambiguous, DO NOT guess the intended scope.
+   For example, questions such as "What is the performance?",
+   "How is the business doing?", or "What is the status?"
+   must trigger a clarification question.
+   Ask whether the user means Deals, Work Orders, or both,
+   and what metric or aspect they want.
 9. For revenue/pipeline questions, use the Deal Value field when available and state the field used.
 10. For operational questions, use Work Orders fields such as execution status, billing/collection status and amount receivable when available.
-11. When useful, provide actionable next steps, but do not invent causes or facts.
+11. When useful, provide actionable business insights.
 """
     response = client.chat.completions.create(
         model="monday-fast",
